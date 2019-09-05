@@ -40,7 +40,7 @@ def fib3(num3:Int):Int = {
     return a
 }
 
-/////Cuarta sucesion fibonacci
+////Cuarta sucesion fibonacci
 
 def fib4(num4:Int):Int={
     var a=0
