@@ -99,5 +99,10 @@ def fib5(num5: Int): Int = {
    }
    return (ab(0) + ab(1))
 }
+println(fib1(10))
+println(fib2(10))
+println(fib3(10))
+println(fib4(10))
+println(fib5(10))
 println(fib6(10))
 
