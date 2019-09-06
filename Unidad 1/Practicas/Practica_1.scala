@@ -1,9 +1,9 @@
 //1.  algoritmo en scala que calcule el radio de un circulo
-def radio(valor:Double)={
+def Circulo(valor:Double)={
     var pi: Double=3.1416
     var Circunferencia: Double= valor
     var rest: Double=Circunferencia/(2*pi)
-    println (s"El radio de un rectangulo con un circunferencia de $Circunferencia es : "+ rest)
+    println (s"El radio de un Circulo con un circunferencia de $Circunferencia es : "+ rest)
 }
 //2.algoritmo en scala que me diga si un numero es primo
 def primo(x: Int) ={
