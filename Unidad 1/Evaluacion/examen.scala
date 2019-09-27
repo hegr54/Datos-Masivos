@@ -1,6 +1,7 @@
 def breaking_records(score:List[Int]): Unit={  //(String)
     var i:Int= 10
     println("Score: "+ i)
+    //
     //var score = List(10,5,20,20,4,5,2,25,1)
     var min = score(0)
     var minCount = 0;
