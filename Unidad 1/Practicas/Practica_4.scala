@@ -10,7 +10,7 @@ import spark.implicits._
 
 //funciones agregadas
 ///Practica 4 crear 20 funciones con esta base de datos
-
+///a
 df.select(min("Open")).show()       //Devuelve el valor mínimo de todos los valores numéricos no NULL especificados por la expresión, en el contexto del ámbito especificado. Puede usarla para especificar un valor mínimo para el eje del gráfico para controlar la escala.
 df.select($"Open".as("OPEN")).show()    //Solo se le genera un alias como una etiqueta para facilitar algunos nombres de tablas o atributos.
 df.select($"Low".name("LOW")).show()  //Cambia el valor de la tabla

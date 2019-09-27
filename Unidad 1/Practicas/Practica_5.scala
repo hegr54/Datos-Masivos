@@ -9,7 +9,7 @@ df.printSchema()
 
 df.show()
 // Other Aggregate Functions
-
+//a
 //practica 5
 // 20 ejemplos
 /////1
