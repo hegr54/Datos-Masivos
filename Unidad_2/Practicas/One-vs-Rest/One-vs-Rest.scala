@@ -16,7 +16,7 @@ val spark = SparkSession.builder.appName(s"OneVsRestExample").getOrCreate()
 
     // $example on$
     // load data file.
-    val inputData = spark.read.format("libsvm").load("spark/data/mllib/sample_multiclass_classification_data.txt")
+    val inputData = spark.read.format("libsvm").load("sample_multiclass_classification_data.txt")
 inputData.show()
     // generate the train/test split.
     val Array(train, test) = inputData.randomSplit(Array(0.8, 0.2))

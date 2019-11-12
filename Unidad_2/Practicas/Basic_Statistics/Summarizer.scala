@@ -3,7 +3,7 @@ import org.apache.spark.ml.stat.Summarizer
 import org.apache.spark.sql.SparkSession
 
 // Create a SparkSession
-val spark = SparkSession.builder.getOrCreate()
+val spark = SparkSession.builder.appName("SumarizacionExample").getOrCreate()
 
 // Import the Spark Implicits librarie
 import spark.implicits._
