@@ -16,7 +16,7 @@ val spark = SparkSession.builder.appName("DecisionTreeClassificationExample").ge
     val labelIndexer = new StringIndexer().setInputCol("label").setOutputCol("indexedLabel").fit(data)
     // Automatically identify categorical features, and index them.
     val featureIndexer = new VectorIndexer().setInputCol("features").setOutputCol("indexedFeatures").setMaxCategories(4).fit(data)
-
+    featureIndexer.show()
     // Split the data into training and test sets (30% held out for testing).
     val Array(trainingData, testData) = data.randomSplit(Array(0.7, 0.3))
 
