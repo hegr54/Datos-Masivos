@@ -215,7 +215,7 @@ Scala combina programación orientada a objetos y funcional en un lenguaje conci
 
 #### Multilayer_Perceptron_Classifier
 ##### Codigo
-
+```scala
             //Importación del algoritmo Multilayer Perception Classifier y importamos las librerías importantes para generar 
             import org.apache.spark.mllib.classification.{SVMModel, SVMWithSGD}
             import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
@@ -279,9 +279,10 @@ Scala combina programación orientada a objetos y funcional en un lenguaje conci
             println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")
             println(s"Test Error = ${(1.0 - accuracy)}")
             val t1 = System.currentTimeMillis
-'''
+```
 #### Naive_Bayes
 ##### Código
+``` scala
             import org.apache.spark.ml.classification.NaiveBayes
             import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
             import org.apache.spark.ml.feature.VectorIndexer
@@ -330,7 +331,7 @@ Scala combina programación orientada a objetos y funcional en un lenguaje conci
             println(s"Test set accuracy = $accuracy")
             println(s"Test Error = ${(1.0 - accuracy)}")
             val t1 = System.currentTimeMillis
-
+```
 ### RESULTADOS
             En los próximas pruebas se tomarán en cuenta los comportamiento de cada uno de los algoritmos con la misma base de datos para ver como es la exactitud, error de cada prueba y cuanto es el tiempo de ejecución de cada uno.
 
