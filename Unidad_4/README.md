@@ -128,7 +128,7 @@ Scala combina programación orientada a objetos y funcional en un lenguaje conci
 ### IMPLEMENTACIÓN
 #### Decision_tree_classifier
 ##### Código
-
+```scala
                 import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
                 import org.apache.spark.mllib.util.MLUtils
                 import org.apache.spark.sql.SparkSession
@@ -210,9 +210,12 @@ Scala combina programación orientada a objetos y funcional en un lenguaje conci
                 println(s"Learned classification tree model:\n ${treeModel.toDebugString}")
                 // $example off$
                 val t1 = System.currentTimeMillis
+```
+
 
 #### Multilayer_Perceptron_Classifier
 ##### Codigo
+```scala
             //Importación del algoritmo Multilayer Perception Classifier y importamos las librerías importantes para generar 
             import org.apache.spark.mllib.classification.{SVMModel, SVMWithSGD}
             import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
@@ -276,9 +279,10 @@ Scala combina programación orientada a objetos y funcional en un lenguaje conci
             println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")
             println(s"Test Error = ${(1.0 - accuracy)}")
             val t1 = System.currentTimeMillis
-
+```
 #### Naive_Bayes
 ##### Código
+``` scala
             import org.apache.spark.ml.classification.NaiveBayes
             import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
             import org.apache.spark.ml.feature.VectorIndexer
